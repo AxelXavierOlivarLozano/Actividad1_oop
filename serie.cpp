@@ -31,8 +31,19 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    
-    
-    
+#include <iostream>
+    int a, d, n;
+    double suma = 0;
+    cin >> a;
+    cin >> d;
+    cin >> n;
+
+    // Calcula la suma de la serie aritmética
+    for (int i = 0; i < n; i++) {
+        suma += a + i * d;
+    }
+  cout << "La suma de la serie aritmética es: " << suma << std::endl;
+
     return 0;
 }
+
