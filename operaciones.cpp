@@ -13,14 +13,10 @@ void operaNumeros() {
     char option;
 
     // 2. Leer 2 números por teclado
-    cout << "Enter the first number: ";
     cin >> num1;
-
-    cout << "Enter the second number: ";
     cin >> num2;
 
     // 3. Leer la opción - sin mostrar los mensajes
-    cout << "Enter the operation (S for sum, R for subtraction, M for multiplication): ";
     cin >> option;
 
     // Determinar la opción elegida y llevar a cabo la operación aritmética, para
