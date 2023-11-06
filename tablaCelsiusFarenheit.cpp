@@ -63,10 +63,10 @@ int main(int argc, const char * argv[]) {
     cout << "CELSIUS   FAHRENHEIT" << endl;
 
     // Realiza las conversiones y muestra la tabla
-    for (int i = 0; i < numero_conversiones; i++) {
+    for (int cont = 1; i < numero_conversiones; cont++) {
         int celsius = valor_inicial_celsius + i * incremento;
-        double fahrenheit = (9.0 / 5.0) * celsius + 32;
-        cout << celsius << "         " << fahrenheit << endl;
+        fahrenheit = (9.0 / 5.0) * valor_inical_celsius + 32;
+        cout << valor_inicial_celsius << "         " << fahrenheit << endl;
     }
 
     return 0;
