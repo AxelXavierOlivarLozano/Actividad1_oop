@@ -42,32 +42,23 @@ CELSIUS FARENHEIT
 #include <string>
 using namespace std;
 
-
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    int valor_inicial_celsius;
-    int numero_conversiones;
-    int incremento;
+    double valorInicial;
+    int conversiones, incremento;
 
-    // Solicita al usuario los datos de entrada
-    cout << "Ingrese el valor inicial en Celsius: ";
-    cin >> valor_inicial_celsius;
-
-    cout << "Ingrese el número de conversiones que se harán: ";
-    cin >> numero_conversiones;
-
-    cout << "Ingrese el incremento entre los valores Celsius (valor entero): ";
+    // Solicitar al usuario los datos de entrada
+    cin >> valorInicial;
+    cin >> conversiones;
     cin >> incremento;
 
-    // Imprime la cabecera de la tabla
-    cout << "CELSIUS   FAHRENHEIT" << endl;
+    // Imprimir la cabecera de la tabla
 
-    // Realiza las conversiones y muestra la tabla
-    for (int cont = 1; i < numero_conversiones; cont++) {
-        int celsius = valor_inicial_celsius + i * incremento;
-        fahrenheit = (9.0 / 5.0) * valor_inical_celsius + 32;
-        cout << valor_inicial_celsius << "         " << fahrenheit << endl;
+    for (int i = 0; i < conversiones; i++) {
+        double celsius = valorInicial + i * incremento;
+        double fahrenheit = (9.0 / 5.0) * celsius + 32;
+        cout << celsius << " " << fahrenheit << endl;
     }
 
     return 0;
 }
+
