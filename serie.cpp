@@ -23,26 +23,19 @@ n
 Dato de salida:
 la suma de la serie aritmética anterior.
 */
-
 #include <iostream>
-#include <string>
 using namespace std;
 
+int main() {
+    float a, d, n;
+    float sum = 0;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-#include <iostream>
-    int a, d, n;
-    double suma = 0;
     cin >> a;
     cin >> d;
     cin >> n;
 
-    // Calcula la suma de la serie aritmética
-    for (int i = 0; i < n; i++) {
-        suma += a + i * d;
-    }
-  cout << "La suma de la serie aritmética es: " << suma << std::endl;
+    sum = (n / 2) * (2 * a + (n - 1) * d);
+    cout << sum << endl;
 
     return 0;
 }
