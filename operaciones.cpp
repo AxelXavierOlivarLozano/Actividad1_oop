@@ -3,45 +3,52 @@
 //
 //  Created by Ma. Guadalupe Roque Díaz de León on 26/10/22.
 //
+
 #include <iostream>
 #include <string>
 using namespace std;
 
-void operaNumeros() {
-    // 1. Declaración de variables
-    int num1, num2;
-    char option;
-
-    // 2. Leer 2 números por teclado
+void operaNumeros( ){
+    //1.  Declararación de variables
+    int num1,num2;
+    char opcion;
+    //2. leer 2 números x teclado
     cin >> num1;
     cin >> num2;
 
-    // 3. Leer la opción - sin mostrar los mensajes
-    cin >> option;
 
-    // Determinar la opción elegida y llevar a cabo la operación aritmética, para
+    // 3. Leer opcion - sin mostrar los mensajes
+    //cout << "<S> Mostrar la suma de 2 numeros" << endl <<
+    //"<R> Mostrar la resta de 2 numeros" << endl <<
+    //"<M> Mostrar la multiplicacion de 2 numeros" << endl;
+    cin >> opcion;
+
+
+    // Determinar la opcion elegida y llevar a acabo la operación aritmética, para
     // desplegar el resultado
-    switch (option) {
-        case 'S':
-        case 's':
-            cout << "Sum: " << num1 + num2 << endl;
-            break;
-        case 'R':
-        case 'r':
-            cout << "Difference: " << num1 - num2 << endl;
-            break;
-        case 'M':
-        case 'm':
-            cout << "Product: " << num1 * num2 << endl;
-            break;
-        default:
-            cout << "Opción incorrecta." << endl;
+    // en caso de ser una operación diferente desplegar "opcion incorrecta"
+    if (opcion == 'S'){
+
+        cout<< num1 + num2 << endl;
+    }
+    else if (opcion == 'R'){
+
+        cout << num1 - num2 << endl;
+    }
+    else if (opcion == 'M'){
+
+        cout << num1 * num2 << endl;
+    }
+    else{
+        cout << "opcion incorrecta" << endl;
     }
 }
 
-int main() {
-    // Call the function to perform the operations
+int main(int argc, const char * argv[]) {
+    // insert code here...
     operaNumeros();
+
     return 0;
 }
+
 
